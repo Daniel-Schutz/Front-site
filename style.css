@@ -1,0 +1,212 @@
+body{
+background-color: #191816;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+font-family: Poppins;
+margin:0;
+}
+.primeiraMetade{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+}
+.logo{
+    width: 900px;
+    margin-top: 30px;
+}
+.facaLogin{
+    color: #d4ccb6;
+    margin-bottom: 0%;
+}
+
+.loginBox{
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+    width: 700px;
+    height: 700px;
+    background-color: #24221f;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.campo1{
+    background: url(./assets/images/mail.svg) no-repeat left / 1.3em;
+    background-position: 8px;
+    padding-left: 35px;
+}
+.campo2{
+    background: url(./assets/images/lock.svg) no-repeat left / 1.3em, url(./assets/images/eye.svg) no-repeat right / 1.3em;
+    background-position: 8px, 500px;
+    padding-left: 35px;
+    margin-bottom: 0;
+}
+
+.campo1, .campo2{
+    color: #ffc632;
+    background-color: #24221f;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-color: #afc2b7;
+    border-radius: 2%;
+    margin-bottom: 0;
+    box-shadow: 0 0 0 0;
+    outline: 0;    
+}
+
+
+.input-wrapper input:focus, .input-wrapper input:active{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-color:#ffc632;
+    background: url(./assets/images/mail-focus.svg) no-repeat left / 1.3em;
+    padding-left: 35px;
+    background-position: 8px;
+}
+
+.input-wrapper2 input:focus, .input-wrapper2 input:active{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-color:#ffc632;
+    background: url(./assets/images/lock-focus.svg) no-repeat left / 1.3em, url(./assets/images/eye.svg) no-repeat right / 1.3em;
+    background-position: 8px, 500px;
+    padding-left: 35px;
+    margin-bottom: 0;
+}
+
+.infoCadastro{
+    color: #afb6c2;
+    margin-top: 0;
+}
+.hiperlink1{
+    margin-left: 230px;
+    height: 10px;
+}
+.hiperlink1, .hiperlink2{
+    color:#ffc632;
+    text-decoration: none;
+    
+}
+.lembreme{
+    color: #afb6c2;
+    height: 10px;
+}
+.button{
+    color: #191816;
+    font-size: large;
+    font-weight: bold;
+    font-stretch: expanded;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #ffc632;
+    border-color: #ffc632;
+    border-radius: 2%;
+    box-shadow: 0 0 0 0;
+    outline: 0
+}
+.segundaMetade{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.photo{
+    width: 100%;
+    height: 930px;
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+}
+
+.palavraEmailSenha{
+    color: #afb6c2;
+    width: 525px;
+    height: 55px;
+}
+
+.linhaCima{
+    display: flex;
+    flex-direction: row;
+    width: 525px;
+    
+}
+.logIn{
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.checkbox {
+  display: inline-block;
+  vertical-align: middle;
+}
+.checkbox input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.checkbox label {
+  position: relative;
+  padding-left: 2.2em;
+  display: inline-block;
+}
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.5em;
+  width: 1.5em;
+  background: #24221f;
+  margin-right: 0.5em;
+  border: 1px solid #afb6c2;
+  border-radius: 25%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+.checkbox label::after {
+  content: "\2714";
+  position: absolute;
+  top: 50%;
+  left: 0.75em;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: #FFF;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.checkbox input:checked + label::before {
+  background:#ffc632;
+  border-color:#ffc632;
+}
+.checkbox input:checked + label::after {
+  opacity: 1;
+}
